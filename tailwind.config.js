@@ -1,5 +1,10 @@
 module.exports = {
-    purge: ["./src/**/*.js", "./src/**/*.scss"],
+    purge: {
+        content: ["./src/**/*.js", "./src/**/*.scss"],
+        options: {
+            whitelist: ["bg-red-500", "px-4"],
+        },
+    },
     theme: {
         extend: {
             screens: {
