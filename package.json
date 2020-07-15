@@ -8,17 +8,21 @@
     }
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
     "@craco/craco": "^5.6.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "husky": "^4.2.5",
     "node-sass": "^4.14.1",
+    "node-sass-glob-importer": "^5.3.2",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "source-map-explorer": "^2.4.2",
     "tailwindcss": "^1.4.6"
   },
   "scripts": {
@@ -44,9 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "node-sass-glob-importer": "^5.3.2",
-    "source-map-explorer": "^2.4.2"
   }
 }
