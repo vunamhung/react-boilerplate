@@ -7,6 +7,7 @@ module.exports = {
             scss: resolve(__dirname, "./src/assets/scss"),
             components: resolve(__dirname, "./src/components"),
             views: resolve(__dirname, "./src/views"),
+            utilities: resolve(__dirname, "./src/utilities"),
         },
     },
 };
