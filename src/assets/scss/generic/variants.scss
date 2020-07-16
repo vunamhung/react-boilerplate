@@ -1,4 +1,4 @@
-@each $tone in $tones {
+@each $tone in neutral, primary, success, warning, danger, info, urge {
     .\~#{$tone} {
         --color-content: var(--color-#{$tone}-normal-content);
         --color-fill: var(--color-#{$tone}-normal-fill);
@@ -9,7 +9,7 @@
         --color-light: var(--color-#{$tone}-light, var(--color-core));
         --color-icon: var(--color-#{$tone}-normal-muted);
     }
-    @each $priority in $priorities {
+    @each $priority in low, high {
         .\~#{$tone}.\!#{$priority} {
             --color-content: var(--color-#{$tone}-#{$priority}-content);
             --color-fill: var(--color-#{$tone}-#{$priority}-fill);

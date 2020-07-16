@@ -9,13 +9,24 @@
     justify-content: space-between;
     cursor: pointer;
     position: relative;
-    line-height: $leading-normal;
+    line-height: var(--button-line-height, 1.5);
     white-space: nowrap;
-    transition: filter 75ms linear;
+    transition: filter var(--button-transition-speed, 75ms) linear;
     transform-origin: center;
     text-decoration: none;
     appearance: none;
-    @apply px-2 py-1 rounded outline-none;
+
+    @apply px-2 py-1 rounded outline-none font-secondary;
+
+    &:hover,
+    &:focus {
+        &:not([disabled]):not(.field) {
+            /* We don't apply to button fields, because fields have
+            their own way of denoting state. */
+            filter: brightness(var(--button-filter-brightness, 95%));
+        }
+    }
+
     &[disabled] {
         opacity: 0.6;
         cursor: not-allowed;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "images/logo.svg";
+import "tailwindcss/base.css";
 import "scss/style.scss";
 import "css/tailwind.output.css";
 
@@ -9,6 +10,17 @@ class App extends Component {
             <div className="text-center">
                 <header className="bg-neutral-800 min-h-screen flex items-center justify-center text-white flex-col">
                     <img src={logo} className="logo" alt="logo" />
+                    <h1>
+                        fdsafjsdalf <span className="badge ~danger">test</span>
+                    </h1>
+                    <div className="grid grid-cols-6 gap-2">
+                        <span className="button ~neutral !normal mb-1">Button</span>
+                        <span className="button ~success !normal mb-1">Button</span>
+                        <span className="button ~warning !normal mb-1">Button</span>
+                        <span className="button ~danger !normal mb-1">Button</span>
+                        <span className="button ~info !normal mb-1">Button</span>
+                        <span className="button ~urge !normal mb-1">Button</span>
+                    </div>
                     <div className="container max-w-2xl">
                         <div className="md:grid grid-cols-2 gap-4">
                             <section className="card ~neutral !normal content">
