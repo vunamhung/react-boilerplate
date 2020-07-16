@@ -1,0 +1,23 @@
+.button {
+    background-color: var(--color-fill);
+    color: var(--color-content);
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    line-height: $leading-normal;
+    white-space: nowrap;
+    transition: filter 75ms linear;
+    transform-origin: center;
+    text-decoration: none;
+    appearance: none;
+    @apply px-2 py-1 rounded outline-none;
+    &[disabled] {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
