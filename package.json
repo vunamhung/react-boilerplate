@@ -33,6 +33,7 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build:tailwind": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
+    "prestart": "yarn run build:tailwind",
     "prebuild": "export NODE_ENV=production && yarn run build:tailwind",
     "start": "craco start",
     "build": "craco build",
