@@ -1,24 +1,13 @@
 const { when, whenDev, whenProd, whenTest, ESLINT_MODES, POSTCSS_MODES } = require("@craco/craco");
 const { resolve } = require("path");
+const postcss = require("./postcss.config");
 
 module.exports = {
     style: {
         css: {
             loaderOptions: { sourceMap: true },
         },
-        postcss: {
-            plugins: [
-                require("postcss-easy-import")({ prefix: "string" }),
-                require("postcss-import"),
-                require("postcss-each"),
-                require("tailwindcss"),
-                require("postcss-preset-env"),
-                require("postcss-hexrgba"),
-                require("postcss-clear-fix"),
-                require("postcss-inline-svg"),
-                require("postcss-svgo"),
-            ],
-        },
+        postcss,
     },
     webpack: {
         alias: {
