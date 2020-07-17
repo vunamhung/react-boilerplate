@@ -23,6 +23,7 @@
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.1",
     "postcss-import-ext-glob": "^1.1.0",
+    "postcss-nested": "^4.2.3",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",

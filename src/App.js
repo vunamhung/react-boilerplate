@@ -11,7 +11,7 @@ class App extends Component {
                     <h1>
                         fdsafjsdalf <span className="badge ~danger">test</span>
                     </h1>
-                    <div className="grid grid-cols-6 gap-2">
+                    <div className="grid grid-cols-6 gap-2 my-4">
                         <span className="button ~neutral !normal mb-1">Button</span>
                         <span className="button ~success !normal mb-1">Button</span>
                         <span className="button ~warning !normal mb-1">Button</span>
