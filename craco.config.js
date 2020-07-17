@@ -8,7 +8,7 @@ module.exports = {
         },
         postcss: {
             plugins: [
-                require("postcss-import-ext-glob"),
+                require("postcss-easy-import")({ prefix: "string" }),
                 require("postcss-import"),
                 require("postcss-each"),
                 require("tailwindcss"),
@@ -17,7 +17,6 @@ module.exports = {
                 require("postcss-clear-fix"),
                 require("postcss-inline-svg"),
                 require("postcss-svgo"),
-                require("postcss-sort-media-queries"),
             ],
         },
     },
