@@ -20,8 +20,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "husky": "^4.2.5",
-    "node-sass": "^4.14.1",
-    "node-sass-glob-importer": "^5.3.2",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-import-ext-glob": "^1.1.0",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "prop-types": "^15.7.2",
@@ -32,9 +34,6 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "build:tailwind": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
-    "prestart": "yarn run build:tailwind",
-    "prebuild": "export NODE_ENV=production && yarn run build:tailwind",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"

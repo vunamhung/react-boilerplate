@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import logo from "images/logo.svg";
-import "tailwindcss/base.css";
-import "scss/style.scss";
-import "css/tailwind.output.css";
+import "css/style.css";
 
 class App extends Component {
     render() {
