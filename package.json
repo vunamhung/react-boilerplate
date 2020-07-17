@@ -40,6 +40,7 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "build:tailwind": "tailwindcss build src/assets/css/style.css -o src/assets/css/style.output.css",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"
