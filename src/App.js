@@ -8,12 +8,10 @@ class App extends Component {
             <div className="text-center">
                 <header className="bg-neutral-800 min-h-screen flex items-center justify-center text-white flex-col">
                     <img src={logo} className="logo" alt="logo" />
-                    <h1>
-                        fdsafjsdalf <span className="badge ~danger">test</span>
-                    </h1>
                     <div className="sep" />
                     <div>
                         <span className="button ~neutral mr-2">Button</span>
+                        <span className="button ~primary mr-2">Button</span>
                         <span className="button ~success mr-2">Button</span>
                         <span className="button ~warning mr-2">Button</span>
                         <span className="button ~danger mr-2">Button</span>
@@ -22,44 +20,50 @@ class App extends Component {
                     </div>
                     <div className="sep" />
                     <div>
-                        <span className="button ~neutral !high !small mr-2">Small Button</span>
+                        <span className="button ~primary !high !small mr-2">Small Button</span>
                         <span className="button ~success !high mr-2">Normal Button</span>
                         <span className="button ~warning !high !large mr-2">Large Button</span>
                     </div>
                     <div className="sep" />
                     <div className="container max-w-2xl">
                         <div className="md:grid grid-cols-2 gap-4">
-                            <section className="card ~neutral !normal content">
-                                <h4>~neutral !normal</h4>
+                            <section className="card ~neutral content">
+                                <h4>~neutral</h4>
                                 <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
                             </section>
 
-                            <section className="card ~success !normal content">
-                                <h4>~positive !normal</h4>
+                            <section className="card ~primary content">
+                                <h4>~primary</h4>
                                 <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
                             </section>
 
-                            <section className="card ~warning !normal content">
-                                <h4>~warning !normal</h4>
+                            <section className="card ~success content">
+                                <h4>~success</h4>
                                 <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
                             </section>
 
-                            <section className="card ~danger !normal content">
-                                <h4>~critical !normal</h4>
+                            <section className="card ~warning content">
+                                <h4>~warning</h4>
                                 <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
                             </section>
 
-                            <section className="card ~info !normal content">
-                                <h4>~info !normal</h4>
+                            <section className="card ~danger content">
+                                <h4>~danger</h4>
                                 <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
                             </section>
 
-                            <section className="card ~urge !normal content">
-                                <h4>~urge !normal</h4>
+                            <section className="card ~info content">
+                                <h4>~info</h4>
+                                <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
+                            </section>
+
+                            <section className="card ~urge content">
+                                <h4>~urge</h4>
                                 <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
                             </section>
                         </div>
                     </div>
+                    <div className="sep" />
 
                     <p>
                         Edit <code>src/App.js</code> and save to reload.
@@ -67,6 +71,7 @@ class App extends Component {
                     <a className="text-teal-500" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                         Learn React
                     </a>
+                    <div className="sep" />
                 </header>
             </div>
         );
