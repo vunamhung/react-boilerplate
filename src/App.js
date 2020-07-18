@@ -11,14 +11,22 @@ class App extends Component {
                     <h1>
                         fdsafjsdalf <span className="badge ~danger">test</span>
                     </h1>
-                    <div className="grid grid-cols-6 gap-2 my-4">
-                        <span className="button ~neutral !normal mb-1">Button</span>
-                        <span className="button ~success !normal mb-1">Button</span>
-                        <span className="button ~warning !normal mb-1">Button</span>
-                        <span className="button ~danger !normal mb-1">Button</span>
-                        <span className="button ~info !normal mb-1">Button</span>
-                        <span className="button ~urge !normal mb-1">Button</span>
+                    <div className="sep" />
+                    <div>
+                        <span className="button ~neutral mr-2">Button</span>
+                        <span className="button ~success mr-2">Button</span>
+                        <span className="button ~warning mr-2">Button</span>
+                        <span className="button ~danger mr-2">Button</span>
+                        <span className="button ~info mr-2">Button</span>
+                        <span className="button ~urge mr-2">Button</span>
                     </div>
+                    <div className="sep" />
+                    <div>
+                        <span className="button ~neutral !high !small mr-2">Small Button</span>
+                        <span className="button ~success !high mr-2">Normal Button</span>
+                        <span className="button ~warning !high !large mr-2">Large Button</span>
+                    </div>
+                    <div className="sep" />
                     <div className="container max-w-2xl">
                         <div className="md:grid grid-cols-2 gap-4">
                             <section className="card ~neutral !normal content">
