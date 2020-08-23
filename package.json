@@ -2,27 +2,41 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "predev": "tailwindcss build src/assets/styles/tailwind.css -o public/tailwind.output.css",
+    "dev": "craco start",
+    "prebuild": "cross-env NODE_ENV=production yarn run predev",
+    "build": "craco build",
+    "test": "craco test",
+    "svgr": "svgr src/assets/svg/ -d src/icons/ --icon"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "@vunamhung/arg.js": "^1.4.0",
-    "axios": "^0.19.2",
+    "axios": "0.20.0",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
-    "react-autobind": "^1.0.6",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-particles-js": "^3.3.0",
+    "react-sweet-state": "^2.3.1",
+    "vanilla-lazyload": "^17.1.2"
   },
   "devDependencies": {
     "@craco/craco": "^5.6.4",
     "@svgr/cli": "^5.4.0",
     "@tailwindcss/custom-forms": "^0.2.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@vunamhung/tailwind-config": "^0.9.2",
+    "@tailwindcss/typography": "^0.2.0",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "10.4.9",
+    "@testing-library/user-event": "12.1.2",
+    "@vunamhung/tailwind-config": "0.9.6",
+    "cross-env": "^7.0.2",
     "husky": "^4.2.5",
     "post-cli": "^1.0.5",
     "postcss-clear-fix": "^1.0.1",
@@ -35,23 +49,18 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-svgo": "^4.0.2",
     "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
+    "pretty-quick": "3.0.0",
     "prop-types": "^15.7.2",
-    "react-scripts": "3.4.1",
-    "source-map-explorer": "^2.4.2",
-    "tailwindcss": "^1.4.6",
+    "react-scripts": "3.4.3",
+    "source-map-explorer": "2.5.0",
+    "tailwindcss": "1.7.3",
     "tailwindcss-aspect-ratio": "^3.0.0"
   },
-  "scripts": {
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "build:tailwind": "postcss src/assets/css/style.css -o src/assets/css/style.output.css",
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "svgr": "svgr src/assets/svg/ -d src/icons/ --icon"
-  },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "cracoConfig": "react.config.js",
   "browserslist": {

@@ -1,16 +1,16 @@
-const { resolve } = require("path");
-const postcss = require("./postcss.config");
+const { resolve } = require('path');
+const postcss = require('./postcss.config');
 
 module.exports = {
-    style: {
-        css: {
-            loaderOptions: { sourceMap: true },
-        },
-        postcss,
+  style: {
+    css: {
+      loaderOptions: { sourceMap: true },
     },
-    webpack: {
-        alias: {
-            "@": resolve(__dirname, "./src/"),
-        },
+    postcss,
+  },
+  webpack: {
+    alias: {
+      '@': resolve(__dirname, './src/'),
     },
+  },
 };

@@ -1,13 +1,16 @@
 module.exports = {
-    purge: {
-        content: ["./src/**/*.js", "./src/**/*.css"],
-        options: {
-            whitelist: ["bg-red-500", "px-4"],
-        },
+  purge: ['src/modules/**', 'src/components/**', 'src/pages/**'],
+  theme: {
+    extend: {
+      container: {
+        center: true,
+        padding: 'var(--spacing-4)',
+      },
     },
-    theme: {},
-    variants: {
-        aspectRatio: ["responsive"],
-    },
-    plugins: [require("@vunamhung/tailwind-config"), require("tailwindcss-aspect-ratio"), require("@tailwindcss/custom-forms")],
+  },
+  variants: {},
+  plugins: [require('@vunamhung/tailwind-config'), require('@tailwindcss/custom-forms'), require('@tailwindcss/typography')],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 };
