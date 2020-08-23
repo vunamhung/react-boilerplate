@@ -53,6 +53,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "cracoConfig": "react.config.js",
   "browserslist": {
     "production": [
       ">0.2%",
