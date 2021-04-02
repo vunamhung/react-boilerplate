@@ -1,16 +1,32 @@
 module.exports = {
-  purge: ['src/modules/**', 'src/components/**', 'src/pages/**'],
+  darkMode: false,
+  purge: {
+    mode: 'layers',
+    layers: ['utilities'],
+    content: ['src/**'],
+  },
   theme: {
     extend: {
       container: {
         center: true,
-        padding: 'var(--spacing-4)',
+        padding: '2rem',
+        screens: {
+          sm: '100%',
+          md: '640px',
+          lg: '960px',
+          xl: '1220px',
+        },
+      },
+      flex: {
+        2: '2 1 0%',
+        3: '3 1 0%',
       },
     },
   },
-  variants: {},
-  plugins: [require('@vunamhung/tailwind-config'), require('@tailwindcss/custom-forms'), require('@tailwindcss/typography')],
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-pseudo-selectors'),
+  ],
 };
