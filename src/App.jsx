@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/logo.svg';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+    <div className='text-center'>
+      <header className='bg-[#282c34] h-screen text-white flex flex-col justify-center items-center'>
+        <img src={logo} className='h-60 inline' alt='logo' />
         <p className='text-6xl font-bold mb-8'>Hello Vite + React!</p>
         <p>
           <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
