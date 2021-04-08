@@ -1,4 +1,5 @@
 module.exports = {
+  mode: process.env.NODE_ENV ? 'jit' : undefined, // This "hack" ensures your IDE detects all normal.
   darkMode: false,
   purge: {
     mode: 'layers',
