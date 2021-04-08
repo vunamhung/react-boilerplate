@@ -1039,6 +1039,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-cool-portal@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-cool-portal/-/react-cool-portal-1.1.0.tgz#194352ee426e10dcc00fa8fa85815644af5d7380"
+  integrity sha512-MfL0JyDJeHXU4Satl2lyQbR014z5lvvB61utqsIeiF1g+sfVLoYx+Z7EgQeVSIMdUNbZckK43pxvCC0TwURDLw==
+
 react-dom@^17.0.0:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
