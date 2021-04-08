@@ -10,7 +10,9 @@ function App() {
         <img src={logo} className='h-60 inline' alt='logo' />
         <p className='text-6xl font-bold mb-8'>Hello Vite + React!</p>
         <p>
-          <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
+          <button className='px-2 py-1 rounded border border-white mb-4' onClick={() => setCount((count) => count + 1)}>
+            count is: {count}
+          </button>
         </p>
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
