@@ -1,5 +1,5 @@
 import { vsprintf } from 'sprintf-js';
-import language from '@/language';
+import language from '~/language';
 
 export function __(format: string, ...args: any[]): string {
   if (language?.[format]) {

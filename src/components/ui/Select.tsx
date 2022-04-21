@@ -2,7 +2,7 @@ import type { FC, ReactNode } from 'react';
 import type { RegisterOptions } from 'react-hook-form';
 import clsx from 'clsx';
 import { Controller } from 'react-hook-form';
-import { __ } from '@/utilities';
+import { __ } from '~/utilities';
 
 type Props = {
   control: any;

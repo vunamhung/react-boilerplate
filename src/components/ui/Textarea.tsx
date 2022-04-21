@@ -3,7 +3,7 @@ import type { RegisterOptions } from 'react-hook-form';
 import clsx from 'clsx';
 import RcTextarea from 'rc-textarea';
 import { Controller } from 'react-hook-form';
-import { __ } from '@/utilities';
+import { __ } from '~/utilities';
 
 type Props = {
   control: any;
