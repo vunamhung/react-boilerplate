@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function TheHeader() {
+export function TheHeader() {
   return (
     <header>
       <div className="container">

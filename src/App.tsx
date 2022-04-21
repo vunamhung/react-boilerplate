@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router';
-import TheHeader from '~/modules/TheHeader';
-import TheFooter from '~/modules/TheFooter';
+import { TheHeader, TheFooter } from '~/components';
 
 export default function App() {
   return (

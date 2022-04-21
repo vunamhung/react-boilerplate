@@ -1,4 +1,4 @@
-export default function TheFooter() {
+export function TheFooter() {
   return (
     <footer>
       <div className="container">This is footer</div>
