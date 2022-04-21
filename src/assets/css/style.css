@@ -1,27 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer base {
-  h1 {
-    @apply text-4xl;
-  }
-  h2 {
-    @apply text-3xl;
-  }
-  h3 {
-    @apply text-2xl;
-  }
-  h4 {
-    @apply text-xl;
-  }
-  h5 {
-    @apply text-base;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    @apply font-bold;
-  }
-}
+@import 'tailwindcss/base.css';
+@import 'elements/base.css';
+@import 'elements/typo.css';
+@import 'elements/form.css';
+@import 'elements/headroom.css';
+@import 'elements/skeleton.css';
+@import 'tailwindcss/components.css';
+@import 'tailwindcss/utilities.css';
+@import 'hint.css/hint.min.css';
+@import 'nprogress/nprogress.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import 'filepond/dist/filepond.min.css';
+@import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
