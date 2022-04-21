@@ -1,21 +1,17 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="text-center">
-      <header className="flex h-screen flex-col items-center justify-center bg-[#282c34] text-white">
+    <main className="text-center">
+      <header className="flex h-screen flex-col items-center justify-center">
         <p className="mb-8 text-6xl font-bold text-cyan-500">Hello Vite + React 18!</p>
         <p>
-          <button className="mb-4 rounded border border-white px-2 py-1" onClick={() => setCount((c) => c + 1)}>
+          <button className="mb-4 rounded border border-black px-2 py-1" onClick={() => setCount((c) => c + 1)}>
             count is: {count}
           </button>
         </p>
-        <nav>
-          <Link to="/about">About</Link>
-        </nav>
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
@@ -29,6 +25,6 @@ export default function Home() {
           </a>
         </p>
       </header>
-    </div>
+    </main>
   );
 }
