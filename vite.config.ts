@@ -4,9 +4,7 @@ import ViteReact from '@vitejs/plugin-react';
 import ViteRadar from 'vite-plugin-radar';
 import ViteFonts from 'vite-plugin-fonts';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  jsx: 'react',
   plugins: [
     ViteReact(),
     ViteFonts({
