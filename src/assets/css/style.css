@@ -6,9 +6,3 @@
 @import 'elements/skeleton.css';
 @import 'tailwindcss/components.css';
 @import 'tailwindcss/utilities.css';
-@import 'hint.css/hint.min.css';
-@import 'nprogress/nprogress.css';
-@import 'slick-carousel/slick/slick.css';
-@import 'slick-carousel/slick/slick-theme.css';
-@import 'filepond/dist/filepond.min.css';
-@import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
