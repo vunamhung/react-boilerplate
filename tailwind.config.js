@@ -1,10 +1,14 @@
-const { spacing } = require('tailwindcss/defaultTheme');
+const { fontFamily, spacing } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
   mode: 'jit',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['Jost', 'Helvetica Neue', ...fontFamily.sans],
+      body: fontFamily.sans,
+    },
     extend: {
       colors: {
         neutral: colors.slate,
