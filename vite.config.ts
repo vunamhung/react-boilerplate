@@ -1,18 +1,18 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import ViteReact from '@vitejs/plugin-react';
-import ViteRadar from 'vite-plugin-radar';
-import ViteFonts from 'vite-plugin-fonts';
+import viteReact from '@vitejs/plugin-react';
+import viteRadar from 'vite-plugin-radar';
+import viteFonts from 'vite-plugin-fonts';
 
 export default defineConfig({
   plugins: [
-    ViteReact(),
-    ViteFonts({
+    viteReact(),
+    viteFonts({
       google: {
         families: ['Jost'],
       },
     }),
-    ViteRadar({
+    viteRadar({
       enableDev: true,
       analytics: {
         id: 'G-XXXXX',
@@ -22,6 +22,6 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    alias: [{ find: '~', replacement: resolve(__dirname, 'src') }],
+    alias: [{ find: '~', replacement: resolve(__dirname, 'app') }],
   },
 });
