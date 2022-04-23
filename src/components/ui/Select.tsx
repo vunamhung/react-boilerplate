@@ -2,7 +2,6 @@ import type { FC, ReactNode } from 'react';
 import type { RegisterOptions } from 'react-hook-form';
 import clsx from 'clsx';
 import { Controller } from 'react-hook-form';
-import { __ } from '~/utilities';
 
 type Props = {
   control: any;
@@ -32,7 +31,7 @@ export const Select: FC<Props> = ({ control, rules, children, name, label, class
           </select>
           {error && (
             <span className={clsx('absolute -bottom-4 text-xs text-red-500', { 'right-0': label })}>
-              {error?.message || __('This field is required')}
+              {error?.message || 'This field is required'}
             </span>
           )}
         </div>

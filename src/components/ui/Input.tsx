@@ -2,7 +2,6 @@ import type { FC } from 'react';
 import type { RegisterOptions } from 'react-hook-form';
 import clsx from 'clsx';
 import { Controller } from 'react-hook-form';
-import { __ } from '~/utilities';
 
 type Props = {
   control: any;
@@ -43,7 +42,7 @@ export const Input: FC<Props> = ({ control, rules, name, label, description, pla
           />
           {error && (
             <span className={clsx('absolute -bottom-4 text-xs text-red-500', { 'right-0': label })}>
-              {error?.message || __('This field is required')}
+              {error?.message || 'This field is required'}
             </span>
           )}
         </div>
