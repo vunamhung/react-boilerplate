@@ -3,13 +3,12 @@ import { defineConfig } from 'vite';
 import viteReact from '@vitejs/plugin-react';
 import viteRadar from 'vite-plugin-radar';
 import viteFonts from 'vite-plugin-fonts';
-import environmentPlugin from 'vite-plugin-environment';
+import viteEnv from 'vite-plugin-environment';
 
 export default defineConfig({
   plugins: [
     viteReact(),
-    environmentPlugin({
-      NODE_ENV: 'dev',
+    viteEnv({
       API_BASE_URL: undefined,
     }),
     viteFonts({
