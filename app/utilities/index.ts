@@ -2,6 +2,7 @@ import axios from 'axios';
 import slugify from 'slugify';
 
 export * from './i18n';
+export * from './http';
 
 export const http = axios.create({ baseURL: '' });
 
