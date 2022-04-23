@@ -35,12 +35,14 @@
     "nonblock-statement-body-position": 1,
     "no-else-return": 1,
     "no-loop-func": 1,
+    "no-empty": 1,
     "no-restricted-globals": 0,
     "react/react-in-jsx-scope": 0,
     "jsx-a11y/no-autofocus": 0,
     "jsx-a11y/no-onchange": 0,
     "import/no-anonymous-default-export": 0,
     "@typescript-eslint/naming-convention": 0,
-    "@typescript-eslint/no-non-null-assertion": 0
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/ban-ts-comment": 1
   }
 }
