@@ -4,10 +4,12 @@ import viteReact from '@vitejs/plugin-react';
 import viteRadar from 'vite-plugin-radar';
 import viteFonts from 'vite-plugin-fonts';
 import viteEnv from 'vite-plugin-environment';
+import viteAnalyze from 'rollup-plugin-analyzer';
 import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   plugins: [
+    viteAnalyze({ summaryOnly: true }),
     visualizer(),
     viteReact(),
     viteEnv({
