@@ -1,15 +1,10 @@
 import axios from 'axios';
-import Cookie from 'js-cookie';
 import nprogress from 'nprogress';
 import { useToken } from '~/hooks';
 
 const http = axios.create({ baseURL: process.env.API_BASE_URL });
 
 export const setAuthorization = (token: string | undefined) => (http.defaults.headers.common.Authorization = `Bearer ${token}`);
-
-if (Cookie.get('token')) {
-  setAuthorization(Cookie.get('token'));
-}
 
 http.interceptors.request.use(
   (config) => {
