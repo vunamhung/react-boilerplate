@@ -4,9 +4,11 @@ import viteReact from '@vitejs/plugin-react';
 import viteRadar from 'vite-plugin-radar';
 import viteFonts from 'vite-plugin-fonts';
 import viteEnv from 'vite-plugin-environment';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   plugins: [
+    visualizer(),
     viteReact(),
     viteEnv({
       API_BASE_URL: undefined,

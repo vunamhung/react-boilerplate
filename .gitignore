@@ -19,6 +19,7 @@ tailwind.output.css
 .env.development.local
 .env.test.local
 .env.production.local
+stats.html
 .idea
 
 npm-debug.log*
