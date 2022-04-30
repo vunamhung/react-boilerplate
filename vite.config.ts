@@ -10,7 +10,7 @@ import { visualizer } from 'rollup-plugin-visualizer';
 export default defineConfig({
   plugins: [
     viteAnalyze({ summaryOnly: true }),
-    visualizer(),
+    visualizer({ gzipSize: true }),
     viteReact(),
     viteEnv({
       API_BASE_URL: undefined,
