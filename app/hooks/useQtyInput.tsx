@@ -3,7 +3,7 @@ import { useDebounce } from 'ahooks';
 import { useImmerReducer } from 'use-immer';
 
 export function useQtyInput(defaultValue: number) {
-  const [quantity, dispatch] = useImmerReducer((draft: number, { type }: { type: 'increment' | 'decrement' | 'reset' }) => {
+  const [quantity, dispatch] = useImmerReducer((draft: number, type: 'increment' | 'decrement' | 'reset') => {
     if (type === 'reset') {
       return defaultValue;
     } else if (type === 'increment') {
@@ -17,13 +17,13 @@ export function useQtyInput(defaultValue: number) {
 
   const dec = () => {
     if (quantity > 1) {
-      dispatch({ type: 'decrement' });
+      dispatch('decrement');
       setUpdateQuantity(true);
     }
   };
 
   const icr = () => {
-    dispatch({ type: 'increment' });
+    dispatch('increment');
     setUpdateQuantity(true);
   };
 
