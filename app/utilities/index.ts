@@ -1,6 +1,7 @@
 import axios from 'axios';
 import slugify from 'slugify';
 
+export * from './store';
 export * from './i18n';
 export * from './http';
 
