@@ -22,6 +22,7 @@
     "filepond-plugin-image-preview": "^4.6.10",
     "headroom.js": "^0.12.0",
     "hint.css": "^2.7.0",
+    "html-react-parser": "^1.4.14",
     "immer": "^9.0.12",
     "is-mobile": "3.1.1",
     "isbot": "3.4.6",
