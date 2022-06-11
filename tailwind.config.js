@@ -1,6 +1,8 @@
 const { fontFamily, spacing } = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
   content: ['./index.html', './app/**/*.{js,ts,jsx,tsx}'],
@@ -78,5 +80,19 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/line-clamp'), require('@tailwindcss/forms')({ strategy: 'class' })],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        { 'grid-auto-fit': (value) => ({ gridTemplateColumns: `repeat(auto-fit, minmax(${value}, 1fr))` }) },
+        { values: theme('gridAutoFit') },
+      );
+      matchUtilities(
+        { 'grid-auto-fill': (value) => ({ gridTemplateColumns: `repeat(auto-fill, minmax(${value}, 1fr))` }) },
+        { values: theme('gridAutoFill') },
+      );
+    }),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/forms')({ strategy: 'class' }),
+  ],
 };
