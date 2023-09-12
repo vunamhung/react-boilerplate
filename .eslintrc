@@ -43,6 +43,7 @@
     "import/no-anonymous-default-export": 0,
     "@typescript-eslint/naming-convention": 0,
     "@typescript-eslint/no-non-null-assertion": 0,
+    "jsdoc/newline-after-description": 0,
     "@typescript-eslint/ban-ts-comment": 1
   }
 }
