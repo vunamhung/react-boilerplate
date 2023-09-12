@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig, PluginOption } from 'vite';
 import viteReact from '@vitejs/plugin-react';
 import viteRadar from 'vite-plugin-radar';
 import viteFonts from 'vite-plugin-fonts';
@@ -9,8 +9,12 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   plugins: [
-    viteAnalyze({ summaryOnly: true }),
-    visualizer({ gzipSize: true }),
+    viteAnalyze({
+      summaryOnly: true
+    }) as PluginOption,
+    visualizer({
+      gzipSize: true
+    }) as PluginOption,
     viteReact(),
     viteEnv({
       API_BASE_URL: undefined,

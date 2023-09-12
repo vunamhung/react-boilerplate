@@ -4,12 +4,15 @@ const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
   content: ['./index.html', './app/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontFamily: {
-      sans: ['Jost', 'Helvetica Neue', ...fontFamily.sans],
-      body: fontFamily.sans,
+    gridAutoFit: {
+      1: spacing[1],
+      7: spacing[7],
+    },
+    gridAutoFill: {
+      1: spacing[1],
+      7: spacing[7],
     },
     extend: {
       colors: {
@@ -19,6 +22,19 @@ module.exports = {
         warning: colors.yellow,
         info: colors.blue,
         critical: colors.red,
+        primary: {
+          50: '#f0fcf9',
+          100: '#e1faf2',
+          200: '#b6f2dc',
+          300: '#8debc5',
+          400: '#42db8f',
+          500: '#00cb56',
+          600: '#00b849',
+          700: '#009938',
+          800: '#007a29',
+          900: '#005c1c',
+          950: '#003b10',
+        },
       },
       container: {
         center: true,
@@ -27,7 +43,7 @@ module.exports = {
           sm: '100%',
           md: '640px',
           lg: '960px',
-          xl: '1220px',
+          xl: '1600px',
         },
       },
       screens: {
@@ -81,7 +97,8 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(({ matchUtilities, theme }) => {
+    plugin(({ matchUtilities, theme, addVariant }) => {
+      addVariant('child', '&>*');
       matchUtilities(
         { 'grid-auto-fit': (value) => ({ gridTemplateColumns: `repeat(auto-fit, minmax(${value}, 1fr))` }) },
         { values: theme('gridAutoFit') },
@@ -92,7 +109,5 @@ module.exports = {
       );
     }),
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/forms')({ strategy: 'class' }),
   ],
 };

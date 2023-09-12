@@ -4,10 +4,6 @@ import App from '~/App';
 import Home from '~/routes/Home';
 import About from '~/routes/About';
 import '~/assets/css/style.css';
-import 'hint.css/hint.min.css';
-import 'nprogress/nprogress.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import 'filepond/dist/filepond.min.css';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 
