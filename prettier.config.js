@@ -5,10 +5,8 @@ module.exports = {
   importOrder: [
     '<TYPES>^[react]',
     '<TYPES>',
-    '<TYPES>^[@]',
     '<BUILTIN_MODULES>',
     '^react$',
-    '^next',
     '^@mantine',
     '^[.]',
     '<THIRD_PARTY_MODULES>',

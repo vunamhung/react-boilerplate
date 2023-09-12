@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <main className="text-center">
-      <header className="flex h-[90vh] flex-col  items-center justify-center">
+      <header className="flex h-[90vh] flex-col items-center justify-center">
         <img className="h-36" src="/images/logo.svg" alt="logo" />
         {keyword} <br />
         <p className="mb-8 text-6xl font-bold text-cyan-500">Hello Vite + React 18!</p>
