@@ -1,2 +1,2 @@
-export { TheHeader } from './TheHeader';
-export { TheFooter } from './TheFooter';
+export * from './TheHeader';
+export * from './TheFooter';
