@@ -1,39 +1,18 @@
-import { resolve } from 'path';
 import { defineConfig, PluginOption } from 'vite';
-import viteReact from '@vitejs/plugin-react';
-import viteRadar from 'vite-plugin-radar';
-import viteFonts from 'vite-plugin-fonts';
 import viteEnv from 'vite-plugin-environment';
+import tsConfigPaths from 'vite-tsconfig-paths';
+import viteReact from '@vitejs/plugin-react-swc';
 import viteAnalyze from 'rollup-plugin-analyzer';
 import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   plugins: [
-    viteAnalyze({
-      summaryOnly: true
-    }) as PluginOption,
-    visualizer({
-      gzipSize: true
-    }) as PluginOption,
+    viteAnalyze({ summaryOnly: true }) as PluginOption,
+    visualizer({ gzipSize: true }) as PluginOption,
     viteReact(),
+    tsConfigPaths(),
     viteEnv({
-      API_BASE_URL: undefined,
-    }),
-    viteFonts({
-      google: {
-        families: ['Jost'],
-      },
-    }),
-    viteRadar({
-      enableDev: true,
-      analytics: {
-        id: 'G-XXXXX',
-      },
-      gtm: [{ id: 'GTM-XXXXX' }],
-      pixel: [{ id: 'XXXXXXX' }],
+      VITE_API_BASE_URL: undefined,
     }),
   ],
-  resolve: {
-    alias: [{ find: '~', replacement: resolve(__dirname, 'app') }],
-  },
 });
