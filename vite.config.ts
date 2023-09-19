@@ -1,4 +1,5 @@
-import { defineConfig, PluginOption } from 'vite';
+import type { PluginOption } from 'vite';
+import { defineConfig } from 'vite';
 import viteEnv from 'vite-plugin-environment';
 import tsConfigPaths from 'vite-tsconfig-paths';
 import viteReact from '@vitejs/plugin-react-swc';
