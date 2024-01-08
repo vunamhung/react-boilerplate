@@ -1,7 +1,6 @@
 @import 'tailwindcss/base.css';
 @import 'elements/base.css';
 @import 'elements/typo.css';
-@import 'elements/form.css';
 @import 'elements/headroom.css';
 @import 'elements/skeleton.css';
 @import 'tailwindcss/components.css';
