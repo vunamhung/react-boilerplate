@@ -1,7 +1,7 @@
-import toast from 'react-hot-toast';
-import { redirect } from 'react-router-dom';
+import { redirect } from '@tanstack/react-router';
 import axios from 'axios';
 import Cookies from 'js-cookie';
+import toast from 'react-hot-toast';
 
 const http = axios.create({ baseURL: import.meta.env.VITE_API_BASE_URL });
 

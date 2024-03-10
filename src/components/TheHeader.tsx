@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
 
 export function TheHeader() {
   return (
@@ -8,6 +8,9 @@ export function TheHeader() {
           <ul className="flex flex-wrap space-x-3">
             <li>
               <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
             </li>
           </ul>
         </nav>

@@ -14,11 +14,11 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./src/*"]
     },
     "typeRoots": [
       "./node_modules/@types",
-      "./app/@types"
+      "./src/@types"
     ]
   }
 }
