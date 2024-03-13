@@ -19,7 +19,7 @@ http.interceptors.response.use(
   async (error) => {
     if (error.response?.status === 401) {
       toast.error(error?.response?.data?.message || error.message);
-      return redirect('/login');
+      throw redirect({ to: '/' });
     }
     return Promise.reject(error);
   },
